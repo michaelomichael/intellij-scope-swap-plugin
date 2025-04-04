@@ -1,0 +1,14 @@
+<!-- Based on https://intellij-icons.jetbrains.design/#AllIcons-expui-ide-localScope -->
+<svg width="40" height="40" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<!-- Background -->
+	<path fill="#EBECF0" d="M14.5,7.5 L11.75,7.5 C12.25,6.5,10.75,4.5,9,6.5 L8,7.5 C6.5,9,7,9.5,8,10.5 L9,11.5 C10.75,13.5,12.25,11.5,11.75,10.5 L13.25,10.5 C13.8,10.5,13.8,10.75,13.75,11 A6.5,6.5,0,1,1,14.5,8 Z"/>
+
+	<!-- Outer circle -->
+	<path fill="none" stroke="#6C707E" stroke-linecap="round" stroke-linejoin="round" d="M13.7663 11 A6.5 6.5 0 1 1 14.443 7"/>
+
+	<!-- Arrow -->
+	<path fill="none" stroke="#3574F0" stroke-linecap="round" stroke-linejoin="round" d="M8.5 9h6m-4-2-2 2 2 2"/>
+
+	<!-- Inner circle -->
+	<path fill="#3574F0" d="M9.93 5.7 C8.66 4.63 6.77 4.8 5.7 6.07 L5.7 6.07  C4.63 7.34 4.8 9.23 6.07 10.3  L6.07 10.3 C6.75 10.87 7.65 11.1 8.45 10.95 L7.48 9.93 C6.41 9.64 5.78 8.55 6.07 7.48 L6.07 7.48 C6.36 6.41 7.45 5.78 8.52 6.07 L8.52 6.07 C8.75 6.13 8.96 6.23 9.15 6.36 c0 0 0.5 -0.51  0.84 -0.61 Z"/>
+</svg>

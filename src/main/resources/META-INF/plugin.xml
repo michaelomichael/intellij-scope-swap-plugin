@@ -1,15 +1,27 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.michaelomichael.intellijscopeswapplugin</id>
-    <name>intellij-scope-swap-plugin</name>
+    <id>com.github.michaelomichael.scopeswap</id>
+    <name>Scope Swap</name>
     <vendor>michaelomichael</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <resource-bundle>messages.ScopeSwapBundle</resource-bundle>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.michaelomichael.intellijscopeswapplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.michaelomichael.intellijscopeswapplugin.startup.MyProjectActivity" />
-    </extensions>
+    <projectListeners>
+        <listener
+                class="dev.michaelomichael.intellij.scopeswap.listeners.ProjectViewListener"
+                topic="com.intellij.ide.projectView.impl.ProjectViewListener"/>
+    </projectListeners>
+
+    <actions resource-bundle="messages.ScopeSwapBundle">
+        <action id="dev.michaelomichael.intellij.scopeswap.actions.SelectPreviousScope"
+                class="dev.michaelomichael.intellij.scopeswap.actions.SelectPreviousScopeAction"
+                icon="/icons/previousScope.svg">
+            <add-to-group group-id="ProjectViewToolbar" anchor="first"/>
+        </action>
+        <action id="dev.michaelomichael.intellij.scopeswap.actions.SelectDefaultScope"
+                class="dev.michaelomichael.intellij.scopeswap.actions.SelectDefaultScopeAction">
+        </action>
+    </actions>
 </idea-plugin>
