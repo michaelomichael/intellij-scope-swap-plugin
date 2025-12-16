@@ -3,5 +3,11 @@
 # intellij-scope-swap-plugin Changelog
 
 ## [Unreleased]
+
+## [0.0.2] - 2025-12-16
+### Added 
+- Support newer versions of IntelliJ
+
+## [0.0.1] - 2025-04-04
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Initial version
